@@ -29,13 +29,28 @@ export function AboutMe() {
                 <span className="text-sm text-gray-600 dark:text-gray-300">
                   • {item.text}
                   {item.company && (
-                    <> at <a href={item.companyLink} className="text-amber-600 dark:text-amber-400 hover:underline">{item.company}</a></>
+                    <> at <a 
+                      href={item.companyLink} 
+                      className="text-amber-600 dark:text-amber-400 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >{item.company}</a></>
                   )}
                   {item.project && (
-                    <>, building <a href={item.projectLink} className="text-amber-600 dark:text-amber-400 hover:underline">{item.project}</a></>
+                    <>, building <a 
+                      href={item.projectLink} 
+                      className="text-amber-600 dark:text-amber-400 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >{item.project}</a></>
                   )}
                   {item.location && (
-                    <> <a href={item.locationLink} className="text-amber-600 dark:text-amber-400 hover:underline">{item.location}</a></>
+                    <> <a 
+                      href={item.locationLink} 
+                      className="text-amber-600 dark:text-amber-400 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >{item.location}</a></>
                   )}
                 </span>
               </li>
@@ -49,7 +64,12 @@ export function AboutMe() {
             {aboutData.previously.map((item, index) => (
               <li key={index}>
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  {item.role} at <a href={item.companyLink} className="text-amber-600 dark:text-amber-400 hover:underline">{item.company}</a>
+                  {item.role} at <a 
+                    href={item.companyLink} 
+                    className="text-amber-600 dark:text-amber-400 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >{item.company}</a>
                   <span className="text-gray-500 dark:text-gray-400"> ({item.period})</span>
                 </span>
               </li>
@@ -63,7 +83,12 @@ export function AboutMe() {
             {aboutData.education.map((item, index) => (
               <li key={index}>
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  {item.degree} from <a href={item.schoolLink} className="text-amber-600 dark:text-amber-400 hover:underline">{item.school}</a>
+                  {item.degree} from <a 
+                    href={item.schoolLink} 
+                    className="text-amber-600 dark:text-amber-400 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >{item.school}</a>
                   {item.period && <span className="text-gray-500 dark:text-gray-400"> ({item.period})</span>}
                 </span>
               </li>
